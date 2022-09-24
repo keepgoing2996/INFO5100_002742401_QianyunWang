@@ -1,0 +1,25 @@
+{
+    "BookShelf": [
+        {
+          "title": "Book A",
+          "publishedYear": 2000,
+          "numberOfPages": 10,
+          "authors": ["Naonao", "Naonao2"]
+        },
+
+        {
+            "title": "Book B",
+            "publishedYear": 2001,
+            "numberOfPages": 20,
+            "authors": ["Meimei", "Meimei2"]
+        },
+
+        {
+            "title": "Book C",
+            "publishedYear": 2002,
+            "numberOfPages": 30,
+            "authors": ["GeGe", "GeGe2"]
+        }
+ 
+    ]
+ }

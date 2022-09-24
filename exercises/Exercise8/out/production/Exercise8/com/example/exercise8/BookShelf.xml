@@ -1,0 +1,21 @@
+<?xml version = "1.0"?>
+<BookShelf>
+    <Book>
+        <title>Book A</title>
+        <publishedYear>2000</publishedYear>
+        <numberOfPages>10</numberOfPages>
+        <authors>Naonao</authors>
+    </Book>
+    <Book>
+        <title>Book B</title>
+        <publishedYear>2001</publishedYear>
+        <numberOfPages>20</numberOfPages>
+        <authors>Meimei</authors>
+    </Book>
+    <Book>
+        <title>Book C</title>
+        <publishedYear>2002</publishedYear>
+        <numberOfPages>30</numberOfPages>
+        <authors>Gege</authors>
+    </Book>
+</BookShelf>
