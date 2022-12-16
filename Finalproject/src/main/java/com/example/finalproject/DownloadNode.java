@@ -7,6 +7,7 @@ public class DownloadNode {
     // create singleton download node
     private static DownloadNode downloadNode = new DownloadNode();
 
+    // private constructor
     private DownloadNode() {}
 
     // function to read inputFile, download and save as outputFile

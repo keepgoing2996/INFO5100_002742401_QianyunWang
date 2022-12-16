@@ -8,4 +8,5 @@ public interface ImageManager {
     void reset();
     // get size
     int size();
+
 }

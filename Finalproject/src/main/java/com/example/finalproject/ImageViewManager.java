@@ -2,7 +2,7 @@ package com.example.finalproject;
 import java.util.ArrayList;
 import java.util.List;
 /**
- * Composite class to handle list of ImageView objects
+ * Composite class to handle list of image information objects
  * */
 public class ImageViewManager extends javafx.scene.image.ImageView implements ImageManager{
     private List<javafx.scene.image.ImageView> imageList = new ArrayList<>();

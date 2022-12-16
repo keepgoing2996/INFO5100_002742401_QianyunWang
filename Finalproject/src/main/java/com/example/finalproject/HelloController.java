@@ -1,6 +1,8 @@
 package com.example.finalproject;
 
-
+/**
+ * Controller for image tool management
+ * */
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.layout.AnchorPane;
@@ -18,7 +20,6 @@ import java.io.IOException;
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import javafx.stage.DirectoryChooser;
-// import javaxt.io.Image;
 public class HelloController {
 
     @FXML
@@ -67,16 +68,19 @@ public class HelloController {
 
     // files list to hold the user selected images.
     private List<File> files = new ArrayList<>();
+    // default saved image format
     private String imageFormat = ".png";
 
+    // max number of files to open
     private static int maxFiles = 4;
 
+    // imageViewManager
     private ImageViewManager imageViewManager = new ImageViewManager();
 
+    // imageInfoManager
     private ImageInfoManager imageInfoManager = new ImageInfoManager();
 
-    public HelloController() {
-    }
+    // choose different image format to save
     @FXML
     void onFormatButtonClick(ActionEvent event) {
         if (event.getSource() == pngFormat) {
@@ -85,8 +89,6 @@ public class HelloController {
             imageFormat = ".tiff";
         } else if (event.getSource() == jpegFormat) {
             imageFormat = ".jpeg";
-        } else if (event.getSource() == bmpFormat)  {
-            imageFormat = ".bmp";
         } else if (event.getSource() == gifFormat) {
             imageFormat = ".gif";
         } else {
