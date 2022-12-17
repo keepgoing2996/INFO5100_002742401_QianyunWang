@@ -29,9 +29,6 @@ public class HelloController {
     private Button multiple;
 
     @FXML
-    private Button bmpFormat;
-
-    @FXML
     private Button gifFormat;
 
     @FXML
@@ -118,7 +115,7 @@ public class HelloController {
         if (chosenDir == null) return;
         if (files == null) return;
         String saveDir = chosenDir.getPath();
-        int numFile = files.size();
+        int numFile = Math.min(files.size(), maxFiles);
         for (int i = 0; i < numFile; i++) {
             File file = files.get(i);
             String fileName = removeExtension(file.getName());
